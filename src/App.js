@@ -9,6 +9,7 @@ function App() {
       {
         id:1,
         tast1:'firebase Auth',
+        reminder: true,
         task2:'machine learning'
       }
     ]

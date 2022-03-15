@@ -1,34 +1,24 @@
-import React, { Component } from "react";
 
-class Form extends Component{
-   state={
-        date:'',
-        task1:'',
-        task2:'',
-        task3:''
-   }
-     handleSubmit=(e)=>{
+import { useState } from "react";
+const Form=()=>{
+   const [date,setDate] =useState('')
+   const [task1,setTask1] =useState('')
+   const [task2,setTask2] =useState('')
+   const [task3,setTask3] =useState('')
+
+   const handleSubmit=(e)=>{
     e.preventDefault();
-     console.log(this.state);
+     console.log(e);
     }
-    handleChange=(e)=>{
-      this.setState({
-        [e.target.id]:e.target.value
-      })
-    
- }
- render(){
      return(
        <div className='container'>
-        <form onSubmit={this.handleSubmit}>
-        <input type='date'  placeholder='Enter Date' id='date' onChange={this.handleChange} required/>
-        <input type="text" placeholder='Task 1' id='task1' onChange={this.handleChange} required/>
-        <input type='text' placeholder='Task 2' id='task2' onChange={this.handleChange} required/>
-        <input type='text' placeholder='Task 3' id='task3' onChange={this.handleChange} required/>
+        <form onSubmit={handleSubmit}>
+        <input type='date'  placeholder='Enter Date' value={date} onChange={(e)=>setDate(e.target.value)} required/>
+        <input type="text" placeholder='Task 1' value={task1} onChange={(e)=>setTask1(e.target.value)} required/>
+        <input type='text' placeholder='Task 2' value={task2} onChange={(e)=>setTask2(e.target.value)} required/>
+        <input type='text' placeholder='Task 3' value={task3} onChange={(e)=>setTask3(e.target.value)} required/>
         <button style={{ border:'none', cursor:'pointer'}}>Commit</button>
       </form>
       </div>
-     )
- }
-}
+     )}
 export default Form;
