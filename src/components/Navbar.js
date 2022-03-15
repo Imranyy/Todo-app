@@ -1,7 +1,7 @@
-const Navbar=()=>{
+const Navbar=({title})=>{
     return(
     <div className="nav">
-      <h2>Todo</h2>
+      <h2>{title}</h2>
     </div>
     )
 }

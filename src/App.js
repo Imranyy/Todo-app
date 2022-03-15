@@ -5,7 +5,7 @@ import Form from './components/form';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar title={Todo}/>
       <Form/>   
     </div>
   );
