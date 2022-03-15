@@ -19,13 +19,15 @@ class Form extends Component{
  }
  render(){
      return(
+       <div className='container'>
         <form onSubmit={this.handleSubmit}>
         <input type='date'  placeholder='Enter Date' id='date' onChange={this.handleChange} required/>
         <input type="text" placeholder='Task 1' id='task1' onChange={this.handleChange} required/>
         <input type='text' placeholder='Task 2' id='task2' onChange={this.handleChange} required/>
         <input type='text' placeholder='Task 3' id='task3' onChange={this.handleChange} required/>
-        <button>Commit</button>
+        <button style={{ border:'none', cursor:'pointer'}}>Commit</button>
       </form>
+      </div>
      )
  }
 }
