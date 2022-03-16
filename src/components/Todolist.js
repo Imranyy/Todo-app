@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { useState} from 'react';
 import { useEffect } from 'react';
 const Todolist=()=>{
@@ -17,6 +17,7 @@ useEffect(()=>{
 
     return(
         <div>
+           <Link to='/'><button className='btn1' style={{backgroundColor:'#282c34',color:'white',fontFamily:'cursive',margin:'0 5% 0 85%'}}>Back</button></Link>
      {posts.map((post)=>(
        <div className='list' key={post.id}>
         <p>{post.date}</p>

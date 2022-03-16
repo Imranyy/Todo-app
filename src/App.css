@@ -58,6 +58,9 @@ button:hover{
   width: 500px;
   margin: 0 35% 0 32%;
   border-radius: 8px;
+  color: white;
+  font-size: large;
+  font-family: cursive;
 }
 @media all and (max-width:800px){
   body{

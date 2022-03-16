@@ -11,7 +11,6 @@ const Form=()=>{
     
 
    //post data to json server
-   
    const addTodo= async(e)=>{
     e.preventDefault();
     const todo={date,task1,task2,task3}

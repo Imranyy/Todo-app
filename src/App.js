@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import './App.css';
-import Form from './components/form';
+import Home from './components/Home';
 import Todolist from './components/Todolist';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
@@ -9,10 +9,9 @@ function App(){
     <Router>
     <div className="App">
       <Navbar title="Todo"/>
-       <Form/>
     </div>
     <Routes>
-      <Route exact path='/'/>
+      <Route exact path='/' element={<Home/>}/>
       <Route path='/todolist' element={<Todolist/>}/>
     </Routes>
     </Router>
