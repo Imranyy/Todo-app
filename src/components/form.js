@@ -8,7 +8,8 @@ const Form=()=>{
 
    const handleSubmit=(e)=>{
     e.preventDefault();
-     console.log(e);
+    const todo={date,task1,task2,task3}
+     console.log(todo);
     }
      return(
        <div className='container'>
