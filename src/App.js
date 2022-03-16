@@ -4,7 +4,7 @@ import Form from './components/form';
 import Todolist from './components/Todolist';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
-function App() {
+function App(){
   return (
     <Router>
     <div className="App">
@@ -13,7 +13,7 @@ function App() {
     </div>
     <Routes>
       <Route exact path='/'/>
-    <Route path='/todolist' element={<Todolist/>}/>
+      <Route path='/todolist' element={<Todolist/>}/>
     </Routes>
     </Router>
   );

@@ -1,12 +1,18 @@
 {
   "posts": [
-    
     {
       "date": "2022-03-17",
       "task1": "machine learning",
       "task2": "firestore auth",
       "task3": "moveis",
       "id": 1
+    },
+    {
+      "date": "2022-03-16",
+      "task1": "imran",
+      "task2": "matano",
+      "task3": "ngati",
+      "id": 2
     }
   ]
 }
