@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState} from 'react';
 import { useEffect } from 'react';
+import {collection, getDocs} from 'firebase/firestore';
+import {db} from './../assest/fireConfig';
 const Todolist=()=>{
     const [posts,setPosts]= useState([]);
 
