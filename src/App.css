@@ -52,7 +52,14 @@ button:hover{
   width: 130px;
   height: 35px;
 }
-@media all and (max-width:1300px){
+.list{
+  text-align: center;
+  background-color: rgb(89, 97, 97);
+  width: 500px;
+  margin: 0 35% 0 32%;
+  border-radius: 8px;
+}
+@media all and (max-width:800px){
   body{
     background-color: aquamarine;
   }
@@ -63,6 +70,10 @@ button:hover{
     padding: 20px 0 10px 0;
     border-radius: 12px;
     border: solid 1px;
+  }
+  .list{
+    text-align: center;
+    margin: 0 20% 0 20%;
   }
   
   

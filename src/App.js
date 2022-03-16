@@ -1,36 +1,21 @@
 import Navbar from './components/Navbar';
 import './App.css';
 import Form from './components/form';
-import { useState } from 'react';
+import Todolist from './components/Todolist';
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
 function App() {
-  const [tasks,setTasks]= useState(
-    [
-      {
-        id:1,
-        tast1:'firebase Auth',
-        reminder: true,
-        task2:'machine learning'
-      }
-    ]
-  )
-
-  
   return (
+    <Router>
     <div className="App">
       <Navbar title="Todo"/>
-      <Form/>   
-      
-      {tasks.map((task)=>(
-       <div key={task.id}>
-        <h2>{task.tast1}</h2>
-        <p>{task.task2}</p>
-        <br/>
-        <h2>{task.tast1}</h2>
-        <p>{task.task2}</p>
-        </div>
-      ))}
+       <Form/>
     </div>
+    <Routes>
+      <Route exact path='/'/>
+    <Route path='/todolist' element={<Todolist/>}/>
+    </Routes>
+    </Router>
   );
 }
 
