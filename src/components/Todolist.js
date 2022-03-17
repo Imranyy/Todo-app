@@ -28,8 +28,8 @@ getTodo();
            <Link to='/'><button className='btn1' style={{backgroundColor:'#282c34',color:'white',fontFamily:'cursive',margin:'0 5% 0 85%'}}>Back</button></Link>
      {posts.map((post)=>{
         return(
-         <div className='list'> {""}
-         {/*<p>{post.date}</p>*/}
+         <div className='list'key={post.id}> {""}
+         <p>{post.date}</p>
          <p>{post.task1}</p>
          <p>{post.task2}</p>
          <p>{post.task3}</p>
