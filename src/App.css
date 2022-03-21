@@ -63,7 +63,7 @@ button:hover{
   font-family: cursive;
   z-index: 1;
 }
-@media all and (max-width:800px){
+@media all and (max-width:500px){
   body{
     background-color: aquamarine;
   }
@@ -77,7 +77,7 @@ button:hover{
   }
   .list{
     text-align: center;
-    margin: 0 20% 0 20%;
+    margin: 0 30% 0 20%;
   }
   
   
