@@ -63,7 +63,7 @@ button:hover{
   font-family: cursive;
   z-index: 1;
 }
-@media all and (max-width:500px){
+@media all and (max-width:800px){
   body{
     background-color: aquamarine;
   }
@@ -77,8 +77,26 @@ button:hover{
   }
   .list{
     text-align: center;
-    margin: 0 30% 0 20%;
+    margin: 0 30% 0 30%;
+    width: 50%;
   }
+  
+button .btn2{
+  margin-top: 10px;
+  margin-right: 1px; 
+  background-color:green;
+  width: 95px;
+  height:30px;
+  border-radius:5px;
+  transition: 500ms;
+}
+button:hover{
+  color: aliceblue;
+  background-color: rgb(89, 97, 97);
+  width: 125px;
+  height: 35px;
+}
+
   
   
 }
